@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration Form</title>
+<style>
+table,th,td{border:5px solid blue;
+border-collapse:collapse;
+}
+</style>
+</head>
+<body>
+<h1 align="center"; style="color:violet;"><u>Registration Form</u></h1><BR><BR>
+
+<form  oninput="res.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)+parseInt(e.value)+parseInt(f.value);" action="form2.html">
+<fieldset style="border-color:red;">
+<legend>PERSONAL INFORAMATION</legend><br>
+<label for="number">AADHAR :</label>
+<input type="number" id="aadhar" name="aadhar"><br><br>
+<label for="name">CONDIDATE NAME :</label>
+<input type="text" id="my_name" name="my_name"><br><br>
+<label for="name">FATHER NAME :</label>
+<input type="text" id="f_name" name="f_name"><br><br>
+<label for="name">MOTHER NAME :</label>
+<input type="text" id="m_name" name="m_name"><br><br>
+<label for="date">DATE OF BIRTH :</label>
+<input type="date" id="birth" name="birthday"><br><br>
+GENDER:<br>
+<input type="radio" id="male" name="gender">
+<label for="gender"> Male </label>
+<input type="radio" id="female" name="gender">
+<label for="gender"> Female </label>
+<input type="radio" id="trans" name="gender">
+<label for="gender"> Transgender </label><br><br>
+<label for="number">CONTACT NO. :</label>
+<input type="number" id="c no" name="contact number">
+<label for="number">ALTERNATE CONTACT NO. :</label>
+<input type="number" id="al_c_no" name="contact number"><br><br>
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email">
+<label for="email">ALTERNATE Email ID:</label>
+<input type="email" id="aemail" name="email"><br><br>
+</fieldset>
+<fieldset style="border-color:red;">
+<legend>ADDRESS</legend>
+<label for="address"> PERMAMENT ADDRESS</label>
+<textarea type="textarea rows="100" cols="78"></textarea><br><br>
+<label for="address"> CURRENT ADDRESS</label>
+<textarea type="textarea rows="100" cols="78"></textarea><BR><BR>
+<label for="name">COUNTRY</label>
+<input type="text" id="contry" name="country"><br><br>
+<label for="name">STATE </label>
+<input type="text" id="state" name="state"><br><br>
+<label for="name">DISTRIC :</label>
+<input type="text" id="dis" name="distric"><br><br>
+<label for="name">BLOCK</label>
+<input type="text" id="bl" name="block"><br><br>
+<label for="name">VILLAGE</label>
+<input type="text" id="vil" name="village"><br><br>
+</fieldset>
+<fieldset style="border-color:red;">
+<legend>EDUCATION QUALIFICATIONs</legend>
+ 
+<label for="name">HIGHEST QUALIFICATION</label>
+<select id="HI" name="qualification">
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="B.E.">B.E.</option>
+<option value="BTech">BTech</option>
+<option value="BSC">BSC</option>
+<option value="BA">BA</option>
+<option value="BCom">Bcom</option>
+<option value="other">OTHER<br><br></option>
+</select><br><br>
+<label for="year">Passing Year</label>
+<input type="year" id="py" name="Passing Year"><br><br>
+
+<p align="center";><b><u>CLASS-10</u></b></p>
+<label for="number">CERTIFICATE NO. :</label>
+<input type="number" id="CN" name="CERTIFICATE number"><br><br>
+
+<label for="number">ROLL NO. :</label>
+<input type="number" id="RN" name="ROLL number"><br><br>
+
+
+
+<table>
+<caption><b><u>Enter 10th Marks</u></b></caption><br><br>
+<tr><th>No.</th><th>Subject</th><th>Total Marks</th><th>Obtaint Marks</th></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="a" value=""</td></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="b" value=""</td></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="c" value=""</td></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="d" value=""</td></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="e" value=""</td></tr>
+<tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number" name="f" value=""</td></tr>
+<tr><td colspan="3">Total</td><td><output name="res"></output></td></tr>
+</table>
+</fieldset><br><br>
+<label for="password">Create Password</label>
+<input type="password" id="ps" name="pw"><br><br>
+<label for="password">again Password</label>
+<input type="password" id="pas" name="pw"><br><br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
